@@ -1,0 +1,11 @@
+development:
+  host: localhost
+  database: rebel_foundation_development
+
+test:
+  host: localhost
+  database: rebel_foundation_test
+
+# set these environment variables on your prod server
+production:
+  uri: <%= ENV['MONGOHQ_URL'] %>
