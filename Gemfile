@@ -48,6 +48,8 @@ group :test, :development do
   gem 'capistrano'
   gem 'capistrano_colors'
   gem 'timecop'
+  gem 'vcr'
+  gem 'fakeweb'
   gem 'email_spec' 
 
   # Pretty printed test output
