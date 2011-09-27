@@ -8,6 +8,22 @@ We've left this completely authentication agnostic since that is very much in fl
 
 Every model you generate will a proper Mongoid Document and proper factory, all tests generated will be rspec tests, and there won't as much useless crap generated.
 
+== Instructions
+
+For those rvm users we've included a rvmrc. Just:
+
+cp rvmrc .rvmrc
+cd ..
+
+And cd back in to your project.
+
+Accept the rvmrc
+
+gem install bundler
+bundle
+
+And you're ready to go.
+
 So strap this to your computer and ...
 
 == Welcome to Rails according to RebelHold!

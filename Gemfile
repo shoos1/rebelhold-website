@@ -22,6 +22,8 @@ gem 'aws-s3'
 gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
 gem 'dynamic_form'
 
+gem 'omniauth' # It's a sane default these days
+
 gem 'pry' # For a better irb
 
 group :production do
