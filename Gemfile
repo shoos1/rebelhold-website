@@ -24,6 +24,8 @@ gem 'dynamic_form'
 
 gem 'omniauth' # It's a sane default these days
 
+gem 'tinymce-rails' #WYSIWYG
+
 gem 'pry' # For a better irb
 
 group :production do
