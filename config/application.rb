@@ -62,11 +62,3 @@ module RebelFoundation
   end
 end
 
-RebelFoundation::Application.configure do
- # Add pry as an irb alternative for console
- silence_warnings do
-   require 'pry'
-   IRB = Pry
- end
-end
-
