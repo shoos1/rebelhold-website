@@ -1,10 +1,11 @@
 module OmniauthSupport
   OmniAuth.config.test_mode = true
+  provider_keys = YAML.load_file(File.join(Rails.root, 'config', 'provider_keys.yaml'))[:test]
 
   PROVIDERS = {
-    foursquare: {
-      token: '219318941446508|20effc615982726d5147c0c5.1-100002952898027|9ZOE0v7ejJPbB2yRLLN7iI9gxP4',
-      uid:   '100002952898027'
+    facebook: {
+      token: provider_keys[:facebook][:token],
+      uid:   provider_keys[:facebook][:uid]
     }
   }
   
