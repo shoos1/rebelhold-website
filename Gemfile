@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.0.rc1'
+gem 'rails', '3.2.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -45,7 +45,7 @@ group :test, :development do
   gem 'ruby-debug19', require: 'ruby-debug'
   gem 'factory_girl_rails'
   gem 'rspec-rails'
-  gem 'capybara', git: 'git://github.com/jnicklas/capybara.git'
+  gem 'capybara'
   gem 'launchy'
   gem 'database_cleaner'
   gem 'mongoid-rspec'
