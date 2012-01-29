@@ -1,6 +1,6 @@
 == Rebel Foundation Opinions
 
-RebelHold as a collective is highly opinionated. Rebel Foundation has taken Rails 3.1 and layered our operating opinions right on top of it.
+RebelHold as a collective is highly opinionated. Rebel Foundation has taken Rails 3.2 and layered our operating opinions right on top of it.
 
 So, if you like MongoDB and Mongoid, Haml, Rspec, FactoryGirl, and Heroku, you've chosen the right project to use as your base.
 
