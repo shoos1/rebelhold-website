@@ -39,6 +39,10 @@ group :development do
   gem 'showoff-io'
 
   gem 'unicorn'
+  
+  gem 'simplecov',      require: false
+  gem 'simplecov-rcov', require: false
+  
 end
 
 group :test, :development do
