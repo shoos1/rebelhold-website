@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.0'
+gem 'rails', '~> 3.2.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -36,15 +36,7 @@ group :development do
   gem 'heroku'
   gem 'taps'
 
-  # Boom Boom Pow
-  gem 'powify'
-  gem 'showoff-io'
-
   gem 'unicorn'
-  
-  gem 'simplecov',      require: false
-  gem 'simplecov-rcov', require: false
-  
 end
 
 group :test, :development do
@@ -64,5 +56,8 @@ group :test, :development do
 
   # Pretty printed test output
   gem 'turn', require: false
+
+  gem 'simplecov',      require: false
+  gem 'simplecov-rcov', require: false
 end
 
