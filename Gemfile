@@ -12,7 +12,7 @@ end
 
 gem 'jquery-rails'
 
-gem 'mongoid',  '~> 2.2.0'
+gem 'mongoid'
 gem 'bson_ext', '~> 1.2'
 gem 'rails3-generators'
 
