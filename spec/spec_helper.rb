@@ -18,7 +18,6 @@ Dir[Rails.root.join('spec/support/**/*.rb')].each {|f| require f}
 RSpec.configure do |config|
   
   config.mock_with :rspec
-  config.include OmniauthSupport, type: :request
   config.include Mongoid::Matchers
   config.include EmailSpec::Helpers
   config.include EmailSpec::Matchers

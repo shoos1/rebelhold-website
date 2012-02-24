@@ -289,7 +289,7 @@ PLATFORMS
 DEPENDENCIES
   aws-s3
   bcrypt-ruby
-  bson_ext (~> 1.2)
+  bson_ext
   capistrano
   capistrano_colors
   capybara

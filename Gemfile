@@ -13,7 +13,7 @@ end
 gem 'jquery-rails'
 
 gem 'mongoid'
-gem 'bson_ext', '~> 1.2'
+gem 'bson_ext'
 gem 'rails3-generators'
 
 gem 'haml'
@@ -27,7 +27,6 @@ gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-identity'
-
 gem 'bcrypt-ruby'
 
 gem 'stripe'

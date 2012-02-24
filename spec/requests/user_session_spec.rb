@@ -15,8 +15,7 @@ describe 'UserSession' do
   context 'creating new user' do
 
     before do
-      visit root_path
-      click_link 'Register'
+      visit new_user_path
 
       fill_in 'name',                   with: 'Test User'
       fill_in 'email',                  with: 'test@example.com'
