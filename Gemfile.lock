@@ -36,6 +36,7 @@ GEM
       builder
       mime-types
       xml-simple
+    bcrypt-ruby (3.0.1)
     bson (1.6.0)
     bson_ext (1.6.0)
       bson (= 1.6.0)
@@ -101,6 +102,7 @@ GEM
       term-ansicolor (~> 1.0.5)
     highline (1.6.11)
     hike (1.2.1)
+    hpricot (0.8.6)
     i18n (0.6.0)
     journey (1.0.3)
     jquery-rails (2.0.0)
@@ -148,6 +150,11 @@ GEM
       rack
     omniauth-facebook (1.2.0)
       omniauth-oauth2 (~> 1.0.0)
+    omniauth-google-oauth2 (0.1.9)
+      omniauth (~> 1.0)
+      omniauth-oauth2
+    omniauth-identity (1.0.0)
+      omniauth (~> 1.0)
     omniauth-oauth (1.0.0)
       oauth
       omniauth (~> 1.0)
@@ -281,6 +288,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-s3
+  bcrypt-ruby
   bson_ext (~> 1.2)
   capistrano
   capistrano_colors
@@ -294,6 +302,7 @@ DEPENDENCIES
   haml
   haml-rails
   heroku
+  hpricot
   jquery-rails
   launchy
   mongoid
@@ -301,6 +310,8 @@ DEPENDENCIES
   mongoid-rspec
   omniauth
   omniauth-facebook
+  omniauth-google-oauth2
+  omniauth-identity
   omniauth-twitter
   rails (~> 3.2.0)
   rails3-generators

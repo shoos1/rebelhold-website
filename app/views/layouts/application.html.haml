@@ -1,0 +1,18 @@
+!!! 5
+%html
+  %head
+    %title RebelFoundation
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    %header
+      %ul.main-menu
+        - if @current_user
+          %li= link_to 'Dashboard', [:dashboard]
+          %li= link_to 'Logout', [:logout]
+        - else
+          %li= link_to 'Login', [:login]
+          %li= link_to 'Register', [:new, :user]
+    %section
+      = yield

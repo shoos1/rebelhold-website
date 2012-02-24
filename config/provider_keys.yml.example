@@ -1,0 +1,25 @@
+development:
+  facebook:
+    consumer_key: <your_consumer_key>
+    consumer_secret: <your_consumer_secret>
+  twitter:
+    consumer_key: <your_consumer_key>
+    consumer_secret: <your_consumer_secret>
+
+test:
+  facebook:
+    consumer_key: <your_consumer_key>
+    consumer_secret: <your_consumer_secret>
+    token: <your_token>
+    uid: <your_uid>
+  twitter:
+    consumer_key: <your_consumer_key>
+    consumer_secret: <your_consumer_secret>
+
+production:
+  facebook:
+    consumer_key: <your_consumer_key>
+    consumer_secret: <your_consumer_secret>
+  twitter:
+    consumer_key: <your_consumer_key>
+    consumer_secret: <your_consumer_secret>
