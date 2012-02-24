@@ -3,7 +3,6 @@ class UserSessionController < ApplicationController
   end
 
   def create
-    debugger
     user = User.find(request.env['omniauth.auth']['uid']) if request.env['omniauth.auth']
     if user
       session[:user_id] = user.id
@@ -17,6 +16,6 @@ class UserSessionController < ApplicationController
   end
 
   def failure
-    redirect_to login_path, error: 'Invalid email or password, please try again'
+    redirect_to login_path, alert: 'Invalid email or password, please try again'
   end
 end
