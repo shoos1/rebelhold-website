@@ -16,6 +16,9 @@ RebelFoundation::Application.routes.draw do
 
   scope controller: :pages do
     get :contact_us
+    get :services
+    get :portfolio
+    get :about
   end
   
   root to: 'pages#index'

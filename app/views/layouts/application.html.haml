@@ -17,7 +17,11 @@
               %li
                 = link_to 'Home', root_path
               %li
-                = link_to 'About', '#'
+                = link_to 'Services', [:services]
+              %li
+                = link_to 'Portfolio', [:portfolio]
+              %li
+                = link_to 'About', [:about]
               %li
                 = link_to 'Contact Us', [:contact_us]
             %ul.nav.pull-right
@@ -29,15 +33,18 @@
                   = link_to 'Login', [:login]
               %li
                 = link_to 'Register', [:new, :user]
-   
+      
     - if flash.present?
       %section.container-fluid
         - flash.each do |alert_type, message|
           = content_tag :article, class: "alert-message #{alert_type} row-fluid" do
             = message
+    %section.logo
+      = image_tag 'logo.png'
+    %br
     %section.container-fluid
-      .row-fluid
-        .span2{style: 'background-color: black'}
-          Sidebar
-        .span10{style: 'background-color: black'}
-          = yield
+      = yield
+      
+  %footer
+    %h2
+      Rebel against the Norm
