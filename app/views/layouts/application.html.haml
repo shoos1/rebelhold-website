@@ -6,45 +6,15 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    %header
-      .navbar
-        .navbar-inner
-          .container-fluid
-            %ul.nav.pull-left
-              %li
-                %h1.brand
-                  = link_to 'RebelHold', root_path
-              %li
-                = link_to 'Home', root_path
-              %li
-                = link_to 'Services', [:services]
-              %li
-                = link_to 'Portfolio', [:portfolio]
-              %li
-                = link_to 'About', [:about]
-              %li
-                = link_to 'Contact Us', [:contact_us]
-            %ul.nav.pull-right
-              - if @current_user
-                %li
-                  = link_to 'Logout', [:logout]
-              - else
-                %li
-                  = link_to 'Login', [:login]
-              %li
-                = link_to 'Register', [:new, :user]
-      
-    - if flash.present?
-      %section.container-fluid
-        - flash.each do |alert_type, message|
-          = content_tag :article, class: "alert-message #{alert_type} row-fluid" do
-            = message
-    %section.logo
+    %header.logo
       = image_tag 'logo.png'
-    %br
-    %section.container-fluid
-      = yield
-      
-  %footer
-    %h2
-      Rebel against the Norm
+    .container-fluid
+      .row-fluid
+        .span2.well
+          Heyo!
+        .span9.well
+          = yield
+      .row-fluid
+        %footer
+          %h2
+            Rebel against the Norm
